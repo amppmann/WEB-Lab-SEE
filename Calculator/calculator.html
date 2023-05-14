@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Calculator</title>
+</head>
+<style>
+
+fieldset{
+    width: 500px;
+    margin: 100px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 30px 20px;
+    background-color:cyan;
+    justify-content: center;
+}
+input{
+    width: 300px;
+    height: 30px;
+    border-radius: 7px;
+    outline:none;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.buttons{
+    margin: 20px 10px;
+    font-size: 30px;
+    display:flex;
+}
+button{
+    font-size: 20px;
+    margin: 10px 10px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    height: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: gray;
+    transition-duration: 300ms;
+}
+</style>
+<body>
+
+    <fieldset>
+        <legend>Simple Calculator</legend>
+
+        <h3>Enter First Number</h3>
+        <input type="text" name="firstNumber" id="firstNumber" placeholder="First Number">
+        <h3>Enter Second Number</h3>
+        <input type="text" name="secondNumber" id="secondNumber" placeholder="Second Number">
+        <div class="buttons">
+            <button id="add" onclick="handleClick(this)">+</button>
+            <button id="sub" onclick="handleClick(this)">-</button>
+            <button id="mul" onclick="handleClick(this)">*</button>
+            <button id="div" onclick="handleClick(this)">/</button>
+            <button id="per" onclick="handleClick(this)">%</button>
+            <button id="pow" onclick="handleClick(this)">^</button>
+        </div>
+        <h3>Result</h3>
+        <input type="text" name="result" id="result" readonly>
+
+    </fieldset>
+    <script src="calculator.js"></script>
+</body>
+
+</html>

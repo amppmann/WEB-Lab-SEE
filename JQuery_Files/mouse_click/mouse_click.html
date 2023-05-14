@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>JQuery-Mouse Clicks</title>
+</head>
+<style>
+    body {
+        background-color: yellow;
+        margin-top: 50px;
+    }
+
+    li {
+        display: block;
+        margin: 20px 20px;
+        padding: 10px 30px;
+        text-align: center;
+        border: 2px solid rgb(253, 122, 0);
+        background-color: orange;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        $("li").click(function () {
+            $(this).hide();
+        });
+    });
+</script>
+
+<body>
+    <ol type="">
+       <li>1-Click on me and I'll disappear.</li>
+       <li>2-Click on me and I'll disappear.</li>
+       <li>3-Click on me and I'll disappear.</li>
+       <li>4-Click on me and I'll disappear.</li>
+       <li>5-Click on me and I'll disappear.</li>
+       <li>6-Click on me and I'll disappear.</li>
+    </ol>
+</body>
+
+</html>

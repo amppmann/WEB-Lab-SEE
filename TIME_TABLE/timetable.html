@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ISE-Time Table</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #logo {
+        margin: 20px auto;
+        text-align: center;
+
+    }
+
+    #logo img {
+        filter: grayscale();
+
+    }
+
+    h1 {
+        text-align: center;
+        display: inline-block;
+        background-color: rgb(199, 199, 199);
+        padding: 3px 10px;
+        border-radius: 7px;
+        margin: 10px auto;
+        font-size: 30px;
+    }
+
+    .heading {
+        margin: auto;
+    }
+
+    #headings {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .subheadings h1 {
+        margin: auto 24px;
+    }
+
+    .subheadings :first-child {
+        margin-left: 90px;
+    }
+
+    .schedules {
+        margin: 40px auto;
+        border-collapse: collapse;
+        padding: 10px 10px;
+        font-size: 25px;
+    }
+    
+    th,
+    td {
+        padding: 15px 20px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    th {
+
+        background-color: rgb(196, 196, 196);
+    }
+
+    li {
+        margin: 4px;
+        list-style: none;
+    }
+
+
+    .faculty{
+        border-collapse: collapse;
+        width: 1490px;
+        margin: 50px auto;
+
+    }
+</style>
+
+<body>
+    <div id="logo">
+        <img src="img/logo.png" alt="">
+    </div>
+    <div id="headings">
+        <div class="heading">
+            <h1>Department of Information Science & Engineering</h1>
+        </div>
+        <div class="heading">
+            <h1>Time Table - Even Semester 2022-2023</h1>
+        </div>
+        <div class="subheadings">
+            <h1>VI Semester</h1>
+            <h1>Section-C</h1>
+            <h1>Class Advisors : Mr.Santhosh S,Ms.Deepa</h1>
+            <h1>Room No : LH504</h1>
+        </div>
+    </div>
+
+    <table border="1" class="schedules">
+        <thead>
+            <th>Time/Day</th>
+            <th>9.00-9.55</th>
+            <th>9.55-10.50</th>
+            <th>11.10-12.05</th>
+            <th>12.05-1.00</th>
+            <th>1.00-1.55</th>
+            <th>1.55-2.50</th>
+            <th>2.50-3.40</th>
+            <th>3.40-4.30</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>MON</th>
+                <td colspan="2">ML LAB</td>
+                <td>CD</td>
+                <td>CN</td>
+                <td rowspan="6">
+                    <ul>
+                        <li>L</li>
+                        <li>U</li>
+                        <li>N</li>
+                        <li>C</li>
+                        <li>H</li>
+                        <li>B</li>
+                        <li>R</li>
+                        <li>E</li>
+                        <li>A</li>
+                        <li>K</li>
+                    </ul>
+                </td>
+                <td>E2</td>
+                <td>E3</td>
+                <td>ESD</td>
+            </tr>
+            <tr>
+                <th>TUE</th>
+                <td>ML</td>
+                <td>CN</td>
+                <td colspan="2">WP LAB</td>
+                <td></td>
+                <td colspan="2">MOOC</td>
+            </tr>
+            <tr>
+                <th>WED</th>
+                <td>CN</td>
+                <td>ML</td>
+                <td colspan="2">CN LAB</td>
+                <td colspan="3">IOT</td>
+            </tr>
+            <tr>
+                <th>THU</th>
+                <td>E3</td>
+                <td>E2</td>
+                <td>ML</td>
+                <td>CD</td>
+                <td colspan="2">WP LAB</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>FRI</th>
+                <td>E2</td>
+                <td>E3</td>
+                <td>CD</td>
+                <td>CN</td>
+                <td colspan="2">Mini Project</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>SAT</th>
+                <td colspan="4">Department Activity</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1" class="faculty">
+        <thead>
+            <th>Course Code</th>
+            <th>Course</th>
+            <th>Course Title</th>
+            <th colspan="2">Faculty</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>20IS601</td>
+                <td>WP</td>
+                <td>Web Programming</td>
+                <td colspan="2">Ms.Anusha N</td>
+            </tr>
+            <tr>
+                <td>20IS602</td>
+                <td>CN</td>
+                <td>Computer Networks</td>
+                <td>Mr.Santhosh S</td>
+            </tr>
+            <tr>
+                <td>20IS603</td>
+                <td>CD</td>
+                <td>Compiler Design</td>
+                <td>Ms.Preethi Salian K</td>
+            </tr>
+           
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mousedown and Mouseup Event</title>
+</head>
+<style>
+    body{   
+        background-color: purple;
+    }
+    p{
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+<p onmousedown="changeToGreen()" onmouseup="changeToPurple()">Bring Mouse Here to reflect the background change....</p>
+<script>
+    function changeToGreen(){
+        document.body.style.backgroundColor="green";
+        document.querySelector("p").innerHTML="Background has Changed Now..";
+    }
+    
+    function changeToPurple(){
+        document.body.style.backgroundColor="purple";
+        document.querySelector("p").innerHTML="Bring Mouse Here to reflect the background change....";
+    }
+</script>
+</body>
+
+</html>

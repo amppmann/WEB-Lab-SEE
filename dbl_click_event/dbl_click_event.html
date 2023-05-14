@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Double Click Event</title>
+</head>
+<style>
+    body {
+        background-color: purple;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        font-size: 30px;
+        border-radius: 10px;
+        display: block;
+        margin: 10px auto;
+        cursor: pointer;
+    }
+
+    .bg-transition {
+        transition-duration: 1s;
+    }
+</style>
+
+<body>
+    <p style="font-size:30px;color:white;text-align:center;">Double Click on me to change the color</p>
+
+    <button ondblclick="changeBackground()">Click Me</button>
+    <script>
+        function changeBackground() {
+            document.body.style.backgroundColor = "green";
+            document.querySelector("p").innerHTML = "Voila... The Background has got changed...";
+            document.querySelector("body").classList.add("bg-transition");
+        }
+    </script>
+</body>
+
+</html>

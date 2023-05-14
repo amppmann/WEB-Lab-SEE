@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change Background</title>
+</head>
+<style>
+    body{
+        background: purple;
+        font-size: 30px;
+        color: white;
+    }
+    button{
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+
+    button:hover{
+        transition-duration:500ms;
+        background-color: white;
+        color: black;
+    }
+</style>
+
+<body>
+    <p>When this button is triggered, the background color of the web-page will be changed.</p>
+    <button onclick="changeBackground(this)">Change Background</button>
+    <script>
+
+        function changeBackground(button){
+            document.body.style.backgroundColor="green";
+            document.querySelector("p").innerHTML="The background got changed to green..!!";
+        }
+    </script>
+
+
+</body>
+
+</html>

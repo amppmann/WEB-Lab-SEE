@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Squares & Cubes</title>
+</head>
+<style>
+    table {
+        margin: 100px auto;
+        text-align: center;
+        border-collapse: collapse;
+        border: 2px solid white;
+    }
+
+    th,
+    td {
+        padding: 6px 30px;
+        font-size: 25px;
+        color: white;
+
+    }
+</style>
+
+<body background="bg.jpg">
+    <table border="1">
+        <thead>
+            <th>Number</th>
+            <th>Square</th>
+            <th>Cube</th>
+            <th>Square Root</th>
+            <th>Cube Root</th>
+        </thead>
+        <tbody>
+            <script>
+
+                for (var i = 0; i <= 10; i++) {
+                    document.write("<tr><td>" + i + "</td><td>" + (i * i) + "</td><td>" + (i * i * i) + "</td><td>" + Math.sqrt(i) + "</td><td>" + Math.cbrt(i) + "</td></tr>");
+                }
+            </script>
+        </tbody>
+    </table>
+</body>
+
+</html>

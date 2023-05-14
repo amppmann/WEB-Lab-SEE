@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Focus Event</title>
+</head>
+<style>
+    body {
+        font-size: 30px;
+        background-color: purple;
+        margin: 50px;
+    }
+    input{
+        width: 300px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: white;
+        font-size: 30px;
+        outline: none;
+    }
+</style>
+
+<body>
+    <label for="content">Type Something :</label>
+    <input type="text" name="content" onfocus="changeToGreen(this)" onfocusout="changeToRed(this)" autocomplete="off">
+
+    <script>
+        function changeToGreen(bg){
+            bg.style.backgroundColor="green";
+        }
+        function changeToRed(bg){
+            bg.style.backgroundColor="red";
+        }
+    </script>
+</body>
+
+</html>

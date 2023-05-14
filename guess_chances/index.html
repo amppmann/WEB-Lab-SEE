@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Guess Square</title>
+</head>
+
+<body>
+    <script>
+        let inputValue = Number(prompt("Pick a Number between (1-100)"));
+
+        let guess = inputValue * inputValue;
+
+        for (var i = 1; i <= 5; i++) {
+            let guessedValue = Number(prompt("What is the square of " + inputValue + " ?"));
+            if (guessedValue === guess) {
+                alert("You Guessed it Right....!");
+                break
+
+            } else if(i===5){
+                alert('Sorry! You ran out of chances..Please try again later...');
+
+            } else {
+                alert("Sorry..you guessed it wrong..Try Again :)");
+            }
+        }
+    </script>
+</body>
+
+</html>
